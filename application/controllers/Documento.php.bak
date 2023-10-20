@@ -340,7 +340,7 @@ class Documento extends CI_Controller{
     
     function validar_codigo($idproveedor,$codigo)
     {
-        /*$codigo_exists = $this->Documento_model->codigo_exists($codigo,$idproveedor);
+        $codigo_exists = $this->Documento_model->codigo_exists($codigo,$idproveedor);
         header('Content-Type: application/json');
         if($codigo_exists)
         {
@@ -349,10 +349,7 @@ class Documento extends CI_Controller{
         else
         {
             die( json_encode(array('status' => 'success', 'codigo' => 'ok','mensaje' => 'ok')));
-        }*/
-        //this code is temporary, modified on 30-11-2022, pending on further modification!
-        header('Content-Type: application/json');
-         die( json_encode(array('status' => 'success', 'codigo' => 'ok','mensaje' => 'ok')));
+        }
         
     }
     
